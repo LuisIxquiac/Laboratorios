@@ -97,10 +97,10 @@ void main(){
                 yjp=aux;
 
                 //Euler Modificado
-                yiem=ymem(h,ti,yi);
+                yiem=ymem(h,ti,yiem);
 
                 //Heun
-                yih=ymh(h,ti,yi);
+                yih=ymh(h,ti,yih);
 
                 ti=i*h;
                 printf("t%i=%f        y%i=%f        y%i=%f        y%i=%f        y%i=%f   \n",i+1,ti,i+1,yie,i+1,yip,i+1,yiem,i+1,yih);
