@@ -59,7 +59,7 @@ float ymp(float a,float h,float ti, float yi,float yj){
 //Metodo de Euler Modificado.
 
 float ymem(float h,float ti, float yi){
-        float ymem=yi+(h/2)*(fi(ti,yi)+fi(ti+h,yi+fi(ti,yi)));
+        float ymem=yi+(h/2)*(fi(ti,yi)+fi(ti+h,yi+h*fi(ti,yi)));
         return ymem;
 
 }
