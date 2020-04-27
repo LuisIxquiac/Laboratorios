@@ -1,0 +1,9 @@
+set terminal jpeg
+set title 'Evolucion atletica'
+set xlabel 'Semana'
+set ylabel 'Peso(kg)'
+set xrange [0:11]
+set yrange [10:80]
+set grid
+set output 'grafica.jpeg'
+plot ((5.785714)*x)+(14.428572),'data.txt' using 1:2 with points pt 4 ps 2    
