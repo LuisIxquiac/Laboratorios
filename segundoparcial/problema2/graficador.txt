@@ -1,0 +1,11 @@
+set terminal jpeg
+set datafile separator ","
+set title "Metodo de la Biseccion"
+set xlabel "x,root"
+set ylabel "arcsin(x)"
+set xrange [-1:1]
+set yrange [-1.6:1.6]
+set grid
+set output "grafica.jpeg"
+plot asin(x) ,"datos.txt" using 1:2 with linespoints pt 1 ps 3
+
